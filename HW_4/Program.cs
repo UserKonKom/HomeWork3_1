@@ -6,4 +6,11 @@
 */
 
 Console.WriteLine("Введите число");
-int number = Convert.ToInt32(Console.ReadLine());
+int num1 = int.Parse(Console.ReadLine());
+int num2 = int.Parse(Console.ReadLine());
+int num3 = int.Parse(Console.ReadLine());
+int maxNum = 0;
+if (num1 > maxNum) maxNum = num1;
+if (num2 > maxNum) maxNum = num2;
+if (num3 > maxNum) maxNum = num3;
+Console.Write("Максимальное значение имеет число " + maxNum);
