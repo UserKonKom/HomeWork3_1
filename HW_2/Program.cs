@@ -5,4 +5,20 @@ a = 2 b = 10 -> max = 10
 a = -9 b = -3 -> max = -3
 */
 
-
+Console.WriteLine("Введите два числа: ");
+int num1 = int.Parse(Console.ReadLine());
+int num2 = int.Parse(Console.ReadLine());
+if (num1 > num2)
+{
+    Console.WriteLine("Число " + num1 + " большее");
+    Console.Write("Число " + num2 + " меньшее");
+}
+else if (num1 == num2)
+{
+    Console.WriteLine("Число " + num1 + " равно числу " + num2);
+}
+else
+{
+    Console.WriteLine("Число " + num2 + " большее");
+    Console.Write("Число " + num1 + " меньшее");
+}
